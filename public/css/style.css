@@ -1,0 +1,23 @@
+.cursor:hover{
+	cursor: pointer;
+}
+#amImg{
+	width: 100%;
+}
+#home{
+	background-image: url("../images/markus-winkler-IrRbSND5EUc-unsplash.png");
+	background-position: center;
+	background-size: cover;
+	background-color: rgba(255,255,255,0.8);
+	background-blend-mode: lighten;
+}
+#home h1{
+	margin-top: 15%;
+}
+/* fixes issue where anchor clicks will overshoot sections */
+:target:before {
+	content:"";
+	display:block;
+	height:90px; /* fixed header height*/
+	margin:-90px 0 0; /* negative fixed header height */
+	}
