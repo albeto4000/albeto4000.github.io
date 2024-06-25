@@ -24,13 +24,21 @@ $("#contact a").on("mouseout", function(){
 });
 
 $(document).on("scroll", function(){
-	if(window.scrollY < $("#portfolio").offset().top - 100 && window.scrollY > $("#about").offset().top - 100){
+	if(window.scrollY > $("#about").offset().top - 100 && window.scrollY < $("#portfolio").offset().top - 100 ){
 		$(".nav-item").removeClass("active");
 		$("#aboutLink").addClass("active");
 	}
-	else if(window.scrollY >= $("#portfolio").offset().top - 100){
+	else if(window.scrollY >= $("#portfolio").offset().top - 100 && window.scrollY < $("#certifications").offset().top - 100){
 		$(".nav-item").removeClass("active");
 		$("#portfolioLink").addClass("active");
+	}
+	else if(window.scrollY >= $("#certifications").offset().top - 100 && window.scrollY < $("#contact").offset().top - 100){
+		$(".nav-item").removeClass("active");
+		$("#certLink").addClass("active");
+	}
+	else if(window.scrollY >= $("#contact").offset().top - 100){
+		$(".nav-item").removeClass("active");
+		$("#contactLink").addClass("active");
 	}
 	else{
 		$(".nav-item").removeClass("active");
