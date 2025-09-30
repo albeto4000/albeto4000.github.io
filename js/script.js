@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 	$("#home").css("height", window.innerHeight);
 });
 
