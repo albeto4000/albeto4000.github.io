@@ -6,7 +6,7 @@
 		<title>Matthew Dolin</title>
 		<!-- Bootstrap CDN -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  	<!-- Bootswatch CSS -->
+  		<!-- Bootswatch CSS -->
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<!-- Project Stylesheet -->
 		<link rel="stylesheet" href="css/style.css">
@@ -14,11 +14,6 @@
 		<link rel="icon" type="image" href="favicon.ico"> -->
 		<!-- FontAwesome -->
 		<script src="https://kit.fontawesome.com/4b01eb49dd.js" crossorigin="anonymous"></script>
-		<script> 
-			$(function(){
-				$("#nav-placeholder").load("nav.html");
-			});
-		</script> 
 	</head>
 	<body class="bg-light">
 		<!-- Navbar -->
@@ -33,7 +28,7 @@
 					<a class="nav-item nav-link" href="#portfolio" id="portfolioLink">PORTFOLIO</a>
 					<a class="nav-item nav-link" href="#certifications" id="certLink">CERTIFICATIONS</a>
 					<a class="nav-item nav-link" href="#contact" id="contactLink">CONTACT</a>
-					<a class="nav-item nav-link" href="Resume.pdf">RESUME</a>
+					<a class="nav-item nav-link" href="pdfs/Resume.pdf">RESUME</a>
 				</div>
 			</div>
 		</nav>
@@ -43,14 +38,14 @@
 			<h6 class="text-center text-fade display-4"><strong><small>DATA ANALYST, WEB DEVELOPER</small></strong></h6>
 		</section>
 		<!-- About -->
-		<section class="bg-success text-light">
+		<section class="bg-success text-light" id="about">
 			<div class="container-fluid">
 				<div class="row py-4">
 					<div class="col-md-6 mb-1">
 						<img src="images/about_me.jpg" id="amImg" />
 					</div>
 					<div class="col-md-6 mt-2">
-						<h1 class="display-5 text-light" id="about" >About Me</h1>
+						<h1 class="display-5 text-light" >About Me</h1>
 						<p class="mt-2">
 							My name is Matthew Dolin. I recently graduated from the P.C. Rossin College of Engineering at Lehigh University, 
 							majoring in computer science and minoring in data science and cognitive science. In addition, I have taken 
@@ -70,38 +65,49 @@
 		<!-- Projects -->
 		<section id="portfolio" class="container my-5">
 			<h1 class="text-center display-5 mb-2">Portfolio</h1>
-			<div class="row">
-				<div class="col-md-4 col-xs-12">
-					<div class="card mx-2 my-2 cursor">
-						<img class="card-img-top" src="images/prairieKing.PNG">
-						<div class="card-body">
+			<div class="row mb-4">
+				<div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+					<div class="card mx-2 my-2 cursor h-100">
+						<img class="card-img-top" src="images/prairieKing.jpg">
+						<div class="card-body my-xs-0 my-sm-2 my-xl-0 py-2">
 							<a class="h5 card-title stretched-link nav-link" href="https://albeto4000.github.io/prairieKing/">Journey of the Prairie King</a>
+							<div class="small">A recreation of ConcernedApe's Stardew Valley minigame, developed with JavaScript and HTML Canvas</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
-					<div class="card mx-2 my-2 cursor">
+				<div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+					<div class="card mx-2 my-2 cursor h-100">
 						<img class="card-img-top" src="images/olympics-graph.png">
-						<div class="card-body">
+						<div class="card-body my-xs-0 my-sm-2 my-xl-0 py-2">
 							<a class="h5 card-title stretched-link nav-link" href="https://albeto4000.github.io/jupyter-notebooks/olympics">Olympics Data Analysis</a>
+							<div class="small">A Jupyter Notebook exploration of data from the Olympic Games using Python and the Plotly Library</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-12">
-					<div class="card mx-2 my-2 cursor">
+				<div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+					<div class="card mx-2 my-2 cursor h-100">
 						<img class="card-img-top" src="images/student-performance.png">
-						<div class="card-body">
+						<div class="card-body my-xs-0 my-sm-2 my-xl-0 py-2">
 							<a class="h5 card-title stretched-link nav-link" href="https://albeto4000.github.io/jupyter-notebooks/student-performance">Student Performance Predictor</a>
+							<div class="small">A Jupyter Notebook project using Python Scikit-Learn to predict students' graduation likelihood</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class='row'>
-				<div class="col-md-4 col-xs-12">
-					<div class="card mx-2 my-2 cursor">
+				<div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+					<div class="card mx-2 my-2 cursor h-100">
 						<img class="card-img-top" src="images/qbMVP.png">
-						<div class="card-body">
+						<div class="card-body my-xs-0 my-sm-2 my-xl-0 py-3">
 							<a class="h5 card-title stretched-link nav-link" href="https://albeto4000.github.io/qb-mvp-predictor/">NFL QB-MVP Predictor</a>
+							<div class="small">An R-Notebook that uses logistic regression to predict each NFL quarterback's likelihood of being named 2024 MVP</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+					<div class="card mx-2 my-2 cursor h-100">
+						<img class="card-img-top" src="images/covid-dashboard/outbreak_map.jpg">
+						<div class="card-body my-xs-0 my-sm-2 my-xl-0 py-3">
+							<a class="h5 card-title stretched-link nav-link" href="https://albeto4000.github.io/covid_dashboard.html">COVID-19 Dashboard</a>
+							<div class="small">A Power BI dashboard that visualizes key metrics and policies about the COVID-19 pandemic</div>
 						</div>
 					</div>
 				</div>
@@ -114,19 +120,19 @@
 				<li class="list-group-item">
 					<h5 class="mb-1"><b class="text-success">Career Essentials in Data Analysis</b>, Microsoft and LinkedIn</h5>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item"><a href="CertificateOfCompletion_Career Essentials in Data Analysis by Microsoft and LinkedIn.pdf">Certificate of Completion</a></li>
+						<li class="list-group-item"><a href="pdfs/CertificateOfCompletion_Career Essentials in Data Analysis by Microsoft and LinkedIn.pdf">Certificate of Completion</a></li>
 					</ul>
 				</li>
 				<li class="list-group-item">
 					<h5 class="mb-1"><b class="text-success">Data Analyst in Python</b>, DataCamp 2024 <small>(in progress)</small></h5>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item"><a href="certificate_pythonAnalyst.pdf">DataCamp Statement of Accomplishment</a></li>
+						<li class="list-group-item"><a href="pdfs/certificate_pythonAnalyst.pdf">DataCamp Statement of Accomplishment</a></li>
 					</ul>
 				</li>
 				<li class="list-group-item">
 					<h5 class="mb-1"><b class="text-success">Power BI Data Analyst Associate</b>, Microsoft 2024 <small>(in progress)</small></h5>
 					<ul class="list-group list-group-flush">
-						<li class="list-group-item"><a href="certificate_powerBI.pdf">DataCamp Statement of Accomplishment</a></li>
+						<li class="list-group-item"><a href="pdfs/certificate_powerBI.pdf">DataCamp Statement of Accomplishment</a></li>
 					</ul>
 				</li>
 				<li class="list-group-item">
